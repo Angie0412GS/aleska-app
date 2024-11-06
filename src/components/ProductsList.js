@@ -61,7 +61,7 @@ const ProductsList = ({ selectedCategory }) => {
       <div className="row ">
         {paginatedProducts.map((product) => (
           <div className="col-md-4 mb-4" key={product.id}>
-            <Link to={`/product/${product.id}`} className={styles.link}>
+            <Link to={`/product/${product.id}/${product.category}`} className={styles.link}>
               <div className={`card h-100 product-container ${styles.card}`}>
                 <div className="image-container">
                   <img
